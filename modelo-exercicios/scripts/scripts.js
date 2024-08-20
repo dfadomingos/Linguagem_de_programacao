@@ -7,5 +7,5 @@ function calcularImc(){
     let imc = peso / Math.pow(altura, 2) //potencia
 
     //mostra o imc ao usuario no paragrafo com id=resposta
-    document.getElementById("imc").innerHTML = `Seu IMC é ${imc}`
+    document.getElementById("imc").innerHTML = `Seu IMC é ${imc.toFixed(2)}`
 }
