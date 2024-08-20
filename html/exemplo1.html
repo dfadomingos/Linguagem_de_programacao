@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo 1</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+    </head>
+    <body>
+        <h1>Conheça meu cachorro</h1>
+        <h2>O nome dele é Zeca</h2>
+        <p>
+            <a href="https://petz.com.br/" target="_blank">Clique aqui</a> para conhecer mais sobre cachorros
+        </p>
+        <p>
+            <img src="../img/zeca.jpg" width="400" height="400"/>
+        </p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rJEIo9LxEQs?si=Ey2Yv3Yiynxz1Flk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p>
+        <p>
+            <table border="1">
+                <tr> <!--table row-->
+                    <th>Nome</th> <!--table head-->
+                    <th>Idade</th>
+                    <th>Raça</th>
+                </tr>
+                <tr>
+                    <td>Juca</td> <!--table data-->
+                    <td>3 anos</td>
+                    <td>Pinscher</td>
+                </tr>
+                <tr>
+                    <td>Zeca</td>
+                    <td>2 anos</td>
+                    <td>Beagle</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            Raças de cachorro
+            <ol>
+                <li>Beagle</li>
+                <li>Poodle</li>
+                <li>Buldog</li>
+            </ol>
+        </p>
+        <!--formularios-->
+        <p>
+            <form action="arquivo.php">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div> 
+                <div>
+                    <label for="sexo">Sexo</label>
+                    <input type="radio" id="sexo" value="Feminino" name="sexo">
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="sexo" value="Masculino" name="sexo">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="sexo" value="Prefiro não informar" name="sexo">
+                    <label for="prefiro">Prefiro não informar</label>
+                    
+                </div>
+                <div>
+                    <label>Hobbies: </label>
+                    <input type="checkbox" id="esporte">
+                    <label for="esporte">Esporte</label>
+                    <input type="checkbox" name="" id="videogame">
+                    <label for="videogame">Videogame</label>
+                    <input type="checkbox" name="" id="leitura">
+                    <label for="leitura">Leitura</label>
+                </div>
+                <div>
+                    <label>Selecione uma opção </label>
+                    <select name="" id="opcao">
+                        <option value="opcao1">Opção 1</option>
+                        <option value="opcao2">Opção 2</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" id="enviar">
+                </div> 
+            </form>
+        </p>
+        
+    </body>
+</html>
