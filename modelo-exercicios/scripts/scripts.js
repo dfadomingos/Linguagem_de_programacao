@@ -1,5 +1,4 @@
 function calcularImc(){
-    //recupera os dados do usuario
     let peso = Number(document.getElementById("peso").value)
     let altura = Number(document.getElementById("altura").value)
 
