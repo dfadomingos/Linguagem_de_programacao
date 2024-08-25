@@ -25,7 +25,7 @@ body {
 }
 
 .sidebar nav ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
 }
 
 .sidebar nav ul li a {
@@ -67,4 +67,8 @@ div .caixa{
     font-size: 15px;
     width: 110px;
     height: 43px;
+}
+
+.sidebar nav ul li a:hover{
+    color: rgba(148, 219, 231, 0.61);   
 }
