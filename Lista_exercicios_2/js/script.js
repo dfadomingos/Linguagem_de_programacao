@@ -1,0 +1,116 @@
+function exerc01(){
+    n1 = Number(document.getElementById("n1").value)
+    n2 = Number(document.getElementById("n2").value)
+    n3 = Number(document.getElementById("n3").value)
+    n4 = Number(document.getElementById("n4").value)
+
+    media = (n1 + n2 + n3 + n4) / 4
+
+    let resultado
+    if(media >= 7){
+        resultado = "Aprovado"
+    }
+    else{
+        resultado = "Reprovado"
+    }
+
+    document.getElementById("media").innerHTML = `A média do aluno é ${media} e foi ${resultado}`
+}
+
+function exerc02(){
+    n1 = Number(document.getElementById("n1").value)
+    n2 = Number(document.getElementById("n2").value)    
+
+    media = (n1 + n2) / 2
+
+    let msg
+    if(media < 3){
+        msg = "o aluno está Reprovado"
+    }
+    else if(media >= 3 && media < 7){
+        msg = "o aluno terá que fazer um Exame"
+    }
+    else{
+        msg = "o aluno está Aprovado"
+    }
+
+    document.getElementById("msg").innerHTML = `A média do aluno é ${media} e ${msg}`
+}
+
+function exerc03(){
+    n1 = Number(document.getElementById("n1").value)
+    n2 = Number(document.getElementById("n2").value)
+
+    let menor
+    if(n1 > n2){
+        menor = n2
+    }
+    else if(n2 > n1){
+        menor = n1
+    }
+    else{
+        menor = n1
+    }
+    document.getElementById("menor").innerHTML = `Menor = ${menor}`
+}
+
+function exerc04(){
+    n1 = Number(document.getElementById("n1").value)
+    n2 = Number(document.getElementById("n2").value)
+    n3 = Number(document.getElementById("n3").value)
+
+    let maior
+    if(n1 >= n2 && n1 >= n3){
+        maior = n1
+    }
+    else if(n2 >= n1 && n2 >= n3){
+        maior = n2
+    }   
+    else{
+        maior = n3
+    } 
+    document.getElementById("maior").innerHTML = `Maior = ${maior}`
+}
+
+function crescente(){
+    n1 = Number(document.getElementById("n1").value)
+    n2 = Number(document.getElementById("n2").value)
+    n3 = Number(document.getElementById("n3").value)
+
+    let maior, menor, meio
+    if(n1 >= n2 && n1 >= n3){
+        maior = n1
+        if(n2 >= n3){
+            meio = n2
+            menor = n3
+        }
+        else{
+            meio = n3
+            menor = n2
+        }
+    }
+    else if(n2 >= n1 && n2 >= n3){
+        maior = n2
+        if(n1 >= n3){
+            meio = n1
+            menor = n3
+        }
+        else{
+            meio = n3
+            menor = n1
+        }
+    }
+    else{
+        maior = n3
+        if(n1 >= n2){
+            meio = n1
+            menor = n2
+        }
+        else{
+            meio = n2
+            menor = n1
+        }
+    }    
+
+    document.getElementById("crescente").innerHTML = `Ordem crescente = ${menor}, ${meio}, ${maior}`
+}
