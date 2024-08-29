@@ -57,6 +57,11 @@ div .caixa{
     padding-bottom: 5px;
 }
 
+div .caixa ol{
+    margin: 3px;
+    
+}
+
 .botao{
     font-size: 15px;
     width: 100px;

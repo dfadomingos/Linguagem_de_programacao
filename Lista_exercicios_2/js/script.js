@@ -72,6 +72,31 @@ function exerc04(){
     document.getElementById("maior").innerHTML = `Maior = ${maior}`
 }
 
+function exerc05(){
+    n1 = Number(document.getElementById("n1").value)
+    n2 = Number(document.getElementById("n2").value)
+
+    let opcao = Number(document.getElementById("opcao").value)
+    switch(opcao){
+        case 1: 
+            resultado = (n1 + n2) / 2;
+            break;
+        case 2:
+            resultado =  n1 - n2
+            break;
+        case 3:
+            resultado = n1 * n2
+            break;
+        case 4:
+            resultado = n1 / n2
+            break;
+        default:
+            resultado = "Opção inválida"
+    }
+
+    document.getElementById("resultado").innerHTML = `Resultado = ${resultado}`
+}
+
 function crescente(){
     n1 = Number(document.getElementById("n1").value)
     n2 = Number(document.getElementById("n2").value)

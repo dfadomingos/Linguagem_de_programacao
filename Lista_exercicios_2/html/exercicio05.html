@@ -31,13 +31,27 @@
             <h2>Exercício 5</h2>
             <form>
                 <div class="caixa">
-                    <label for="n1">Digite o preço do produto R$</label>
-                    <input type="number" name="" id="preco">
-                </div>                
-                    <button class="botao" type="button" onclick="calcularDesc()">Calcular Desconto 
-                    </button>
+                    <label for="n1">Digite o 1° número: </label>
+                    <input type="number" name="" id="n1">
+                </div> 
+                <div class="caixa">
+                    <label for="n2">Digite o 2° número:</label>
+                    <input type="number" name="" id="n2">
+                </div>
+                <div class="caixa">
+                    <label for="opcao">Escolha uma opção:
+                        <ol>
+                            <li>Média entre os números</li>
+                            <li>Diferença do maior pelo menor</li>
+                            <li>Produtos entre os números</li>
+                            <li>Divisão do 1° pelo 2°</li>
+                        </ol>
+                    </label>
+                    <input type="number" name="" id="opcao">  
+                </div>               
+                    <button class="botao" type="button" onclick="exerc05()">Calcular </button>
                 <div> 
-                    <p id="desconto"> </p>
+                    <p id="resultado"> </p>
                 </div>
             </form>
         </main>
