@@ -31,18 +31,27 @@
             <h2>Exercício 6</h2>
             <form>
                 <div class="caixa">
-                    <label for="sal">Salário do Funcionário R$</label>
-                    <input type="number" name="" id="sal">
-                </div>  
+                    <label for="n1">Digite o 1° número: </label>
+                    <input type="number" name="" id="n1">
+                </div> 
                 <div class="caixa">
-                    <label for="vendas">Valor das Vendas R$</label>
-                    <input type="number" name="" id="vendas">
-                </div>              
-                    <button class="botao" type="button" onclick="calcularSal()">Calcular Salário Final 
-                    </button>
+                    <label for="n2">Digite o 2° número:</label>
+                    <input type="number" name="" id="n2">
+                </div>
+                <div class="caixa">
+                    <label for="opcao">Escolha uma opção:
+                        <ol>
+                            <li>1° número elevado ao 2° número</li>
+                            <li>Raiz quadrada dos números</li>
+                            <li>Raiz cúbica dos número</li>                            
+                        </ol>
+                    </label>
+                    <input type="number" name="" id="opcao">  
+                </div>                       
+                    <button class="botao" type="button" onclick="exerc06()">Calcular </button>
                 <div> 
-                    <p id="comissao"> </p>
-                    <p id="sal_final"> </p>
+                    <p id="msg"> </p>
+                    <p id="msg2"> </p>
                 </div>
             </form>
         </main>

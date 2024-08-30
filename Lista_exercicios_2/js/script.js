@@ -93,8 +93,38 @@ function exerc05(){
         default:
             resultado = "Opção inválida"
     }
-
     document.getElementById("resultado").innerHTML = `Resultado = ${resultado}`
+}
+
+function exerc06(){
+    n1 = Number(document.getElementById("n1").value)
+    n2 = Number(document.getElementById("n2").value)
+
+    let opcao = Number(document.getElementById("opcao").value)
+    let result1, result2, msg, msg2
+    if(opcao == 1){
+        result1 = Math.pow(n1, n2)
+        msg = `Resultado = ${result1}`
+        msg2 = " "
+    }
+    else if(opcao == 2){
+        result1 = Math.sqrt(n1)
+        result2 = Math.sqrt(n2)
+        msg = `Raiz quadrada de ${n1} = ${result1}` 
+        msg2 = `Raiz quadrada de ${n2} = ${result2}`
+    }
+    else if(opcao === 3){
+        result1 = Math.cbrt(n1)
+        result2 = Math.cbrt(n2)
+        msg = `Raiz cúbica de ${n1} = ${result1}`
+        msg2 = `Raiz cúbica de ${n2} = ${result2}`
+    }
+    else{
+        msg = "Opção inválida"
+        msg2 = " "
+    }
+    document.getElementById("msg").innerHTML = `${msg}`
+    document.getElementById("msg2").innerHTML = `${msg2}`
 }
 
 function crescente(){
