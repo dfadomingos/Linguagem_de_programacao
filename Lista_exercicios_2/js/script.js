@@ -81,14 +81,18 @@ function exerc05(){
         case 1: 
             resultado = (n1 + n2) / 2;
             break;
-        case 2:
-            resultado =  n1 - n2
+        case 2: if(n1 >= n2){
+                    resultado =  n1 - n2
+                }
+                else{
+                    resultado =  n2 - n1
+                }            
             break;
         case 3:
             resultado = n1 * n2
             break;
-        case 4:
-            resultado = n1 / n2
+        case 4: 
+            resultado = (n2 != 0)? n1 / n2 : "Divisão por zero"  // '?' = if, ':' = else
             break;
         default:
             resultado = "Opção inválida"
