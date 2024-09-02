@@ -127,6 +127,69 @@ function exerc06(){
     document.getElementById("msg2").innerHTML = `${msg2}`
 }
 
+function exerc07(){
+    sal = Number(document.getElementById("sal").value)    
+
+    let msg, novo_sal
+    if(sal < 500){
+        novo_sal = sal * 1.30
+        msg = `Novo salário = ${novo_sal}`
+    }    
+    else{
+        msg = `Não tem direito ao aumento`
+    }
+    document.getElementById("msg").innerHTML = `${msg}`
+}
+
+function exerc08(){
+    sal = Number(document.getElementById("sal").value)    
+
+    let novo_sal
+    if(sal <= 300){
+        novo_sal = sal * 1.35        
+    }    
+    else{
+        novo_sal = sal * 1.15
+    }
+    document.getElementById("novo_sal").innerHTML = `Novo salário = R$${novo_sal}`
+}
+
+function exerc09(){
+    sal = Number(document.getElementById("sal").value)    
+
+    let credito
+    if(sal <= 200){
+        credito = sal * 1.10       
+    }    
+    else if(sal > 200 && sal <= 300){
+        credito = sal * 1.20 
+    }
+    else if(sal > 300 && sal <= 400){
+        credito = sal * 1.25
+    }
+    else{
+        credito = sal * 1.30
+    }
+    document.getElementById("sal_medio").innerHTML = `Salário médio = R$${sal}`
+    document.getElementById("credito").innerHTML = `Credito = R$${credito}`
+}
+
+function exerc10(){
+    carro = Number(document.getElementById("carro").value)    
+
+    let preco
+    if(carro <= 12000){
+        preco = carro * 1.05       
+    }    
+    else if(carro > 12000 && carro <= 25000){
+        preco = carro * 1.25
+    }
+    else{
+        preco = carro * 1.35
+    }    
+    document.getElementById("preco").innerHTML = `Preço ao consumidor = R$${preco}`
+}
+
 function crescente(){
     n1 = Number(document.getElementById("n1").value)
     n2 = Number(document.getElementById("n2").value)
