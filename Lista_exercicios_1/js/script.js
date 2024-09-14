@@ -90,3 +90,24 @@ function calcularAreaQuad(){
 
     document.getElementById("area_quad").innerHTML = `Área = ${area_quad}`
 }
+
+function calcularAreaLos(){
+    let diag_maior = Number(document.getElementById("diag_maior").value)
+    let diag_menor = Number(document.getElementById("diag_menor").value)
+    
+    let area_los = (diag_maior * diag_menor) / 2
+
+    document.getElementById("area_los").innerHTML = `Área = ${area_los}`
+}
+
+function tabuada(){
+    let num = Number(document.getElementById("num").value)    
+    let resultado = ''
+    let i = 0
+    while(i <=10) {
+        let mult = num * i
+        resultado = resultado + `${num} x ${i} = ${mult}<br>`  
+        i++      
+    }
+    document.getElementById("tabuada").innerHTML = `${resultado}`
+}

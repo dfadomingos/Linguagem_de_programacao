@@ -194,6 +194,31 @@ function exerc10(){
     document.getElementById("preco").innerHTML = `Preço ao consumidor = R$${preco}`
 }
 
+function exerc11(){
+    let sal = Number(document.getElementById("sal").value)
+
+    let sal_final
+    let aumento
+    if(sal <= 300){
+        aumento = sal * 0.15
+        sal_final = sal + aumento        
+    }
+    else if(sal > 300 && sal < 600){
+        aumento = sal * 0.10
+        sal_final = sal + aumento
+    }
+    else if(sal >= 600 && sal <= 900){
+        aumento = sal * 0.05
+        sal_final = sal + aumento
+    }
+    else{
+        aumento = 0
+        sal_final = sal
+    }
+    document.getElementById("aumento").innerHTML = `Aumento = R$${aumento}`
+    document.getElementById("sal_final").innerHTML = `Novo salário = R$${sal_final}`
+}
+
 function crescente(){
     n1 = Number(document.getElementById("n1").value)
     n2 = Number(document.getElementById("n2").value)
