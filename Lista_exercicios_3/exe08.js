@@ -6,7 +6,7 @@ let cont_azul = 0
 let cont_ruivo = 0
 let soma_idade_inf = 0
 
-for(let i = 1; i<=2; i++){
+for(let i = 1; i<=6; i++){
     let idade = Number(prompt(`Digite sua idade: `))
     let altura = Number(prompt(`Digite sua altura: `))
     let peso = Number(prompt(`Digite seu peso: `))
