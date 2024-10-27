@@ -1,15 +1,20 @@
 //Domingos Ferreira Alves     AdsII - Matutino
 const prompt = require('prompt-sync')();
 
-function cadastraPaciente(vetPacientes){
-    vetPacientes.push({
-        nome: prompt(`Informe o nome do paciente: `), 
-        idade: Number(prompt(`Informe a idade do paciente: `)),
-        peso: Number(prompt(`Informe o peso do paciente: `)),
-        altura: Number(prompt(`Informe a altura do paciente: `)),
-        condicao: prompt(`Informe a condição do paciente: `)
-    })    
-    console.log(`Paciente cadastrado com sucesso`)
+function cadastraPaciente(vetPacientes) {
+    let nome = prompt('Digite o nome do paciente: ')
+    let idade = Number(prompt('Digite a idade do paciente: '))
+    let peso = Number(prompt('Digite o peso do paciente: '))
+    let altura = Number(prompt('Digite a altura do paciente: '))
+    let condicao = prompt('Digite a condição de saúde (leve, moderada ou grave): ').toLowerCase()
+
+    if(isNaN(idade) || isNaN(peso) || isNaN(altura) || !['leve', 'moderada', 'grave'].includes(condicao)){
+        console.log('Dados inválidos! Tente novamente.');
+        return;
+    }
+
+    vetPacientes.push({ nome, idade, peso, altura, condicao });
+    console.log('Paciente cadastrado com sucesso!');
 }
 
 function consultaPacientes(vetPacientes){
