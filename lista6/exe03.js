@@ -6,6 +6,7 @@ for(let i=0; i<6; i++){
         matriz[i][j] = parseInt(Math.random() * 100)
     }
 }
+console.log(matriz)
 
 let maior, iMaior, iMenor, menor, jMenor, jMaior
 maior = matriz[0][0]; iMaior = 0; jMaior = 0
